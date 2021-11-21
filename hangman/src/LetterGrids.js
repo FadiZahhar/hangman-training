@@ -13,7 +13,7 @@ export default function LetterGrids({secretWord, guessedLetters}) {
                      />
                  )})
     return (
-        <div>
+        <div class="flex flex-wrap">
             {Letters}
         </div>
     );
