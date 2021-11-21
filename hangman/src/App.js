@@ -7,7 +7,10 @@ export default function App() {
         <p>Do you want to play the game</p>
 
         <div>
-            <GameBoard secretWord="React" />
+            <GameBoard 
+            secretWord="React" 
+            maxErrors="6"
+            />
         </div>
     </div>
         

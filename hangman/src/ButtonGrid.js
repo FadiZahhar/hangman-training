@@ -1,6 +1,6 @@
 import Button from './button';
 
-export default function({letterGuest}) {
+export default function({letterGuest, isShown}) {
     
     let letters = ['A','B','C','D','E','F','G','H','J','K','L','M','N','O','P','K','R','S','T','U','W','X','Y','Z'];
 
@@ -11,8 +11,14 @@ export default function({letterGuest}) {
             onClick={letterGuest}
         />
     ));
+
+    let className = '';
+
+    if(!isShown) {
+        className += ' hide';
+    }
     return (
-        <div className="flex flex-wrap mt-10">
+        <div className={className}>
             {buttons}
         </div>
     );

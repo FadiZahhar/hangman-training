@@ -35,6 +35,6 @@
     margin-bottom:4px;
 }
 
-.guessed {
+.guessed, .hide {
     display:none;
 }
