@@ -3,7 +3,7 @@ import { useState } from 'react';
 import LetterGrids from "./LetterGrids";
 import ButtonGrid from "./ButtonGrid";
 
-export default function GameBoard({secretWord, maxErrors}) {
+export default function GameBoard({secretWord, maxErrors, isShown}) {
     const [guessedtLetters,setGuessedtLetters] = useState([]);
     const [errorCount,setErrorCount] = useState(0);
 
@@ -17,7 +17,7 @@ export default function GameBoard({secretWord, maxErrors}) {
         setGuessedtLetters(prev => [...prev,val]);
     }
     return (
-        <div className='app-container'>
+        <div className={isShown ? '' : 'hide'}>
             Mistakes lefts: {maxErrors - errorCount}
             <LetterGrids secretWord={secretWord} 
             guessedLetters={guessedtLetters}
