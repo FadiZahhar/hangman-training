@@ -1,10 +1,12 @@
-import React from 'react'
-
+import Letter from './letter';
 export default function ({ secretWord }) {
     let letters = secretWord
         .split('') //['R','e','a','c','t']
         .map((letter) => (
-            <span>{letter}</span>
+            <Letter
+                value={letter}
+                isShown={false}
+            />
         ));
     return (
         <div>
