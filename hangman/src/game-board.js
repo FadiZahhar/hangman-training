@@ -1,9 +1,12 @@
-import React from 'react'
 import LetterGrid from './letter-grid';
+
 export default function ({ secretWord }) {
+
     return (
         <div>
-            <LetterGrid secretWord={secretWord} />
+            <LetterGrid
+                secretWord={secretWord}
+                guessedLetters={['a', 'r', 't', 'j']} />
         </div>
     )
 }
