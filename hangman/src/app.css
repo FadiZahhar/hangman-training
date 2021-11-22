@@ -1,0 +1,32 @@
+.app-container{
+    width: 400px;
+}
+.letter{
+    border:1px solid gray;
+    font-size:24px;
+    font-weight: bold;
+    line-height: 34px;
+    height: 34px;
+    width: 34px;
+    text-align: center;
+}
+.mt-10{
+    margin-top:10px;
+}
+.flex {
+display: flex;
+}
+.flex-wrap {
+    flex-wrap:wrap;
+}
+.button{
+    
+    font-size:24px;
+    font-weight: bold;
+    line-height: 34px;
+    height: 34px;
+    width: 34px;
+    text-align: center;
+    margin-right: 4px;
+    margin-bottom: 4px;
+}

@@ -5,6 +5,6 @@ export default function ({value,isShown}){
     }
     
     return(
-        <span>{output}</span>
+        <span className="letter">{output}</span>
     );
 }
