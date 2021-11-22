@@ -1,9 +1,9 @@
 import React from 'react'
-
+import LetterGrid from './letter-grid';
 export default function ({ secretWord }) {
     return (
         <div>
-            {secretWord}
+            <LetterGrid secretWord={secretWord} />
         </div>
     )
 }
