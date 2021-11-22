@@ -1,10 +1,10 @@
+import React from 'react';
 import Letter from './letter';
-export default function ({ secretWord, guessedLetters }) {
-    let letters = secretWord
-        .split('') //['R','e','a','c','t']
+export default function LetterGrids({ secretWord, guessedLetters }) {
+    let Letters = secretWord
+        .split('')
         .map((letter, index) => {
             let isShown = guessedLetters.indexOf(letter.toLowerCase()) > -1;
-
             return (
                 <Letter
                     value={letter}
@@ -12,10 +12,10 @@ export default function ({ secretWord, guessedLetters }) {
                     key={index}
                 />
             )
-        });
+        })
     return (
-        <div>
-            {letters}
+        <div >
+            {Letters}
         </div>
-    )
+    );
 }
