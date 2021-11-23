@@ -1,6 +1,6 @@
 import Button from './button';
 
-export default function ({ letterGuessed }) {
+export default function ({ letterGuessed, isShown }) {
 
     let letters = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'K', 'R', 'S', 'T', 'U', 'W', 'X', 'Y', 'Z'];
 
@@ -12,8 +12,12 @@ export default function ({ letterGuessed }) {
         />
     ));
 
+    let className = 'flex flex-wrap mt-10';
+    if (!isShown) {
+        className += ' hidden'
+    }
     return (
-        <div className="flex flex-wrap mt-10">
+        <div className={className}>
             {buttons}
         </div>
     );

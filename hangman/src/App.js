@@ -8,7 +8,10 @@ export default function App() {
             <p>do you want to play a game? </p>
 
             <div>
-                <GameBoard secretWord="TutsPlus" />
+                <GameBoard
+                    secretWord="TutsPlus"
+                    maxErrors={6}
+                />
             </div>
         </div>
     )
