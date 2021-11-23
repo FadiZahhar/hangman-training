@@ -1,6 +1,6 @@
 import Button from './button';
 
-export default function ({ letterGuest, isShown }) {
+export default function ({ letterGuessed }) {
 
     let letters = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'K', 'R', 'S', 'T', 'U', 'W', 'X', 'Y', 'Z'];
 
@@ -8,6 +8,7 @@ export default function ({ letterGuest, isShown }) {
         <Button
             value={letter}
             key={index}
+            onClick={letterGuessed}
         />
     ));
 

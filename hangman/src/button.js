@@ -1,6 +1,6 @@
 import { useState } from 'react';
 
-export default function ({ value }) {
+export default function ({ value, onClick }) {
     const [isClicked, setIsClicked] = useState(false)
     let className = 'button';
 
@@ -9,6 +9,7 @@ export default function ({ value }) {
     }
     function clickHandler() {
         setIsClicked(true);
+        onClick(value)
     }
 
     console.log('button');
