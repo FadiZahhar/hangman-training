@@ -34,3 +34,7 @@
   width: 34px;
   text-align: center;
 }
+
+.guessed {
+  display: none;
+}

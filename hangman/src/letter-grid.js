@@ -14,7 +14,7 @@ export default function LetterGrids({ secretWord, guessedLetters }) {
             )
         })
     return (
-        <div class="flex" >
+        <div className="flex" >
             {Letters}
         </div>
     );
