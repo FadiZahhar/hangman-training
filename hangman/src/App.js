@@ -1,10 +1,9 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
+import './app.css';
 import GameBoard from './game-board';
 
 export default function App() {
     return (
-        <div>
+        <div className="app-container">
             <h1>Welcome to Hangman!</h1>
             <p>do you want to play a game? </p>
 

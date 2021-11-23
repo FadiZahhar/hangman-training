@@ -4,6 +4,6 @@ export default function ({ value, isShown }) {
         output = value
     }
     return (
-        <span>{output}</span>
+        <span className="letter">{output}</span>
     )
 }

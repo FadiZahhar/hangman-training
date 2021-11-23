@@ -12,7 +12,7 @@ export default function ({ letterGuest, isShown }) {
     ));
 
     return (
-        <div>
+        <div className="flex flex-wrap mt-10">
             {buttons}
         </div>
     );
