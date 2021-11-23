@@ -34,3 +34,6 @@ display: flex;
     display: none;
     
 }
+.hidden{
+    display: none;
+}

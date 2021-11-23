@@ -8,7 +8,9 @@ export default function App(){
 
 
             <div>
-                <GameBoard secretWord="butscrache"/>
+                <GameBoard secretWord="butscrache"
+                maxErrors={6}
+                />
             </div>
         </div>
         
