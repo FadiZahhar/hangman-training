@@ -1,6 +1,15 @@
+import { useState } from 'react';
 import GameBoard from './game-board';
 import './app.css';
+import WordSelect from './word-select';
 export default function App(){
+    const [secretWord,setSecretWord]= useState('');
+
+
+
+
+
+
     return(
         <div className="app-container">
             <h1>welcome to Hangman</h1>
@@ -8,8 +17,13 @@ export default function App(){
 
 
             <div>
-                <GameBoard secretWord="butscrache"
-                maxErrors={6}
+                <WordSelect
+                    isShown={!secretWord}
+                    wordSelected={val => setSecretWord(val)}/>
+                <GameBoard 
+                    secretWord={secretWord}
+                    maxErrors={6}
+                    isShown={secretWord}
                 />
             </div>
         </div>
