@@ -8,7 +8,7 @@ export default function App(){
 
 
             <div>
-                <GameBoard secretWord="butscrachers"/>
+                <GameBoard secretWord="butscrache"/>
             </div>
         </div>
         
