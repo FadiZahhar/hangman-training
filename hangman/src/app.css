@@ -6,6 +6,9 @@
     padding: 10px;
     text-align: center;
 }
+.notadiv{
+    margin-top:10%;
+}
 .letter{
     border:1px solid gray;
     font-size:24px;

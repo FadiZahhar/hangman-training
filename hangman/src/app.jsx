@@ -11,26 +11,29 @@ export default function App(){
 
 
     return(
-        <div className="app-container">
-            <div>            
-                <h1>welcome to Hangman</h1>
-                <p>Do you want to play a game?</p>
+        <div className="notadiv">        
+            <div className="app-container">
+                <div>            
+                    <h1>welcome to Hangman</h1>
+                    <p>Do you want to play a game?</p>
 
 
-                <div>
-                    <WordSelect
-                        isShown={!secretWord}
-                        wordSelected={val => setSecretWord(val)}
-                    />
-                    <GameBoard 
-                        secretWord={secretWord}
-                        maxErrors={6}
-                        isShown={secretWord}
-                    />
+                    <div>
+                        <WordSelect
+                            isShown={!secretWord}
+                            wordSelected={val => setSecretWord(val)}
+                        />
+                        <GameBoard 
+                            secretWord={secretWord}
+                            maxErrors={6}
+                            isShown={secretWord}
+                        />
+                    </div>
                 </div>
-            </div>
 
+            </div>
         </div>
+
         
     );
 }
