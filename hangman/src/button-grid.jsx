@@ -19,12 +19,21 @@ export default function ({letterGuessed, isShown}){
         />
     ));
     let className = 'flex flex-wrap mt-10';
+    let className2= '';
     if (!isShown){
         className += ' hidden'
     }
+    else{
+        className2 ='hidden'
+    }
     return(
-        <div className={className}>
-           {buttons} 
+        <div>
+            <div className={className}>
+                {buttons} 
+            </div>
+            <div className={className2}>
+                <h1 id="lost">You Lost</h1> 
+            </div>
         </div>
     )
 }

@@ -14,16 +14,22 @@ export default function({secretWord,maxErrors, isShown}){
        }
     }
     return(
+        <div>
         <div className={isShown ? '' : 'hidden'}>
             <div>
                 Mistakes left: {maxErrors - errorCount}
-            </div>
+            </div><br/>
             <LetterGrid 
                 secretWord={secretWord}
                 guessedLetters={guessedLetters}
             />
             <ButtonGrid letterGuessed={letterGuessedHandler}
             isShown={errorCount<maxErrors}></ButtonGrid>
+            
+        </div>
+            
+                
+            
         </div>
     )
 }

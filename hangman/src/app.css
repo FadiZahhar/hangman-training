@@ -1,5 +1,10 @@
 .app-container{
-    width: 400px;
+    border-style: double;
+    margin: auto;
+    width: 50%;
+    border: 3px solid;
+    padding: 10px;
+    text-align: center;
 }
 .letter{
     border:1px solid gray;
@@ -36,4 +41,7 @@ display: flex;
 }
 .hidden{
     display: none;
+}
+#lost{
+    color: brown;  
 }
