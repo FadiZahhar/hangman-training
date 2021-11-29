@@ -16,7 +16,7 @@ export default function(){
     ))
     
     return(
-        <div>
+        <div className="flex flex-wrap mt-10">
             {buttons}
         </div>
     )

@@ -14,7 +14,7 @@ export default function({secretWord, guessedLetters}){
                         />
                     )});
     return(
-        <div>
+        <div className="flex">
             {letters}
         </div>
     )

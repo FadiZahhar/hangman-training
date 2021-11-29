@@ -1,8 +1,9 @@
+import './app.css';
 import GameBoard from './gameBoard';
 
 export default function App(){
     return(
-        <div>
+        <div className="app-container">
             <h1>Welcome to Hangman!</h1>
             <p>Do you want to play a game?</p>
 
