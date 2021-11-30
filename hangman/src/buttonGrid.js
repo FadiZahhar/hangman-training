@@ -1,6 +1,6 @@
 import Button from './button';
 
-export default function(){
+export default function({letterGuessed}){
     let letters = [
         'A','B','C','D','E','F','G','H',
         'I','J','K','L','M','N','O','P',
@@ -12,6 +12,7 @@ export default function(){
         <Button 
             value={letter}
             key={index}
+            onClick={letterGuessed}
         />
     ))
     
